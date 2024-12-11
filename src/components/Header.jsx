@@ -39,17 +39,24 @@ function Header() {
   ];
 
   return (
-    <div className="flex bg-black items-center justify-between p-4">
-      <div className="flex gap-6 items-center">
+    <div className="bg-black flex items-center justify-between gap-8 p-4">
+      <div className="flex items-center gap-8">
         <img src={Disney} className="w-[80px] md:w-[100px] object-cover" />
-        {menu.map((item) => (
-          <HeaderItem name={item.name} Icon={item.icon} />
-        ))}
+        <div className="hidden md:flex gap-8">
+          {menu.map((item) => (
+            <HeaderItem name={item.name} Icon={item.icon} />
+          ))}
+        </div>
+        <div className="flex gap-8">
+          {menu.map((item) => (
+            <HeaderItem name={item.name} Icon={item.icon} />
+          ))}
+        </div>
       </div>
       <img
-        src="https://i.pinimg.com/236x/2a/9b/d7/2a9bd72cb276c78aa3a82ddaf8ce57bf.jpg"
-        className="w-[40px] rounded-full"
-      ></img>
+        src="https://i.pinimg.com/474x/db/3a/62/db3a623acc8396fb285ec899ad01cd10.jpg"
+        className="w-[40px] rounded-full "
+      />
     </div>
   );
 }

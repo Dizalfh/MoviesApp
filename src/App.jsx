@@ -6,11 +6,9 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
+    <div>
       <Header />
-
-      <p className="text-3xl font-bold underline">Helloo World!</p>
-    </>
+    </div>
   );
 }
 
